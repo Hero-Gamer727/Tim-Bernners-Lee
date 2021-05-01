@@ -1,0 +1,48 @@
+body{
+    text-align:center;
+    padding-top:800px;
+/*    Padding is the internal margin. It means when you want to arrange the contents internally, the contents of the body will appear 800 pixels from top.*/
+    margin: 0px;
+/*    Margin is when you want to separate elements externally.: Margin is the space outside the border of any element*/
+}
+.profile{
+    border-radius:50%;
+    width:300px;
+    margin-bottom:50px;
+}
+#welcome{
+    position: absolute;
+/*
+        Do not leave space for the element.Absolutely positioned boxes can have margins, and they do not collapse with any other margins
+        
+*/
+    overflow:hidden
+/*The overflow property specifies whether to clip content. clip means attach.hidden -The content is clipped and no scrollbars are provided.*/
+        height:800px;
+    color:#FFFFFF;
+    background:linear-gradient(#0dffa6 0%, #0dfce8 50%,#297eff 100%);
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    opacity:0.91;
+/*    opacity or transparency should be givenbetween 0 and 1*/
+    display:table;
+    }
+.parallax-inner{
+    position: relative;
+    display: table-cell;
+/*    we want the div with idname ‘parallel-inner’ to overlay right on the Welcome section. So for that we have set the display of the Welcome section as a table and set the display of the parallel-inner division as table cell so that div elements appear on the section.*/
+    vertical-align:middle;
+}
+#name{
+    font-size:35px
+}
+h1{
+    font-size:40px
+}
+h2{
+    font-size: 30px;
+}
